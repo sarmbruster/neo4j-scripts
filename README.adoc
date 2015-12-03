@@ -1,0 +1,12 @@
+= neo4j-scripts
+
+This repository contains some unsorted scripts in conjunction with http://neo4j.com[Neo4j]
+
+Most of the scripts here require a local installation of http://www.groovy-lang.org[groovy].
+
+WARNING: Some scripts make use of http://docs.groovy-lang.org/latest/html/documentation/grape.html[Grape], so they will download jar files from maven repositories when started for the very first time. Download will take some time. Subsequent invocations will be much faster.
+
+
+== neo4jusers.groovy
+
+Allows to manage users in Neo4j by modifiying `data/dbms/auth`. Please note that you have to restart your Neo4j instance to make the changes active. You can list, add and delete users and change their passwords. For usage information, run `neo4jusers.groovy -h`.
